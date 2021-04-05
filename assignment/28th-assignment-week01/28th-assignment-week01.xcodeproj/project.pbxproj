@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		AB3E64FD261B087200FFE047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E64FC261B087200FFE047 /* AppDelegate.swift */; };
 		AB3E64FF261B087200FFE047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E64FE261B087200FFE047 /* SceneDelegate.swift */; };
-		AB3E6501261B087200FFE047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E6500261B087200FFE047 /* ViewController.swift */; };
+		AB3E6501261B087200FFE047 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E6500261B087200FFE047 /* LoginVC.swift */; };
 		AB3E6504261B087200FFE047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3E6502261B087200FFE047 /* Main.storyboard */; };
 		AB3E6506261B087500FFE047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3E6505261B087500FFE047 /* Assets.xcassets */; };
 		AB3E6509261B087500FFE047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3E6507261B087500FFE047 /* LaunchScreen.storyboard */; };
 		AB3E6517261B0E5C00FFE047 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E6516261B0E5C00FFE047 /* UITextField+Extension.swift */; };
+		AB3E651C261B527100FFE047 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E651B261B527100FFE047 /* SignUpVC.swift */; };
+		AB3E651F261B559F00FFE047 /* ConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E651E261B559F00FFE047 /* ConfirmVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AB3E64F9261B087200FFE047 /* 28th-assignment-week01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "28th-assignment-week01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3E64FC261B087200FFE047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB3E64FE261B087200FFE047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB3E6500261B087200FFE047 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB3E6500261B087200FFE047 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		AB3E6503261B087200FFE047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB3E6505261B087500FFE047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB3E6508261B087500FFE047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB3E650A261B087500FFE047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB3E6516261B0E5C00FFE047 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		AB3E651B261B527100FFE047 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		AB3E651E261B559F00FFE047 /* ConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +64,14 @@
 			children = (
 				AB3E64FC261B087200FFE047 /* AppDelegate.swift */,
 				AB3E64FE261B087200FFE047 /* SceneDelegate.swift */,
-				AB3E6500261B087200FFE047 /* ViewController.swift */,
+				AB3E6500261B087200FFE047 /* LoginVC.swift */,
 				AB3E6502261B087200FFE047 /* Main.storyboard */,
 				AB3E6505261B087500FFE047 /* Assets.xcassets */,
 				AB3E6507261B087500FFE047 /* LaunchScreen.storyboard */,
 				AB3E650A261B087500FFE047 /* Info.plist */,
 				AB3E6516261B0E5C00FFE047 /* UITextField+Extension.swift */,
+				AB3E651B261B527100FFE047 /* SignUpVC.swift */,
+				AB3E651E261B559F00FFE047 /* ConfirmVC.swift */,
 			);
 			path = "28th-assignment-week01";
 			sourceTree = "<group>";
@@ -140,9 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB3E6501261B087200FFE047 /* ViewController.swift in Sources */,
+				AB3E6501261B087200FFE047 /* LoginVC.swift in Sources */,
 				AB3E6517261B0E5C00FFE047 /* UITextField+Extension.swift in Sources */,
 				AB3E64FD261B087200FFE047 /* AppDelegate.swift in Sources */,
+				AB3E651F261B559F00FFE047 /* ConfirmVC.swift in Sources */,
+				AB3E651C261B527100FFE047 /* SignUpVC.swift in Sources */,
 				AB3E64FF261B087200FFE047 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
