@@ -25,4 +25,12 @@ class SignUpVC: UIViewController {
         passwordTextField.isSecureTextEntry = true
         passwordConfirmTextField.isSecureTextEntry = true
     }
+
+    @IBAction func touchUpSignUpButton(_ sender: Any) {
+        guard let confirmVC = storyboard?.instantiateViewController(identifier: "ConfirmVC") as? ConfirmVC else { return }
+        confirmVC.name = emailTextField.text
+        confirmVC.modalPresentationStyle = .fullScreen
+
+        present(confirmVC, animated: true, completion: nil)
+    }
 }

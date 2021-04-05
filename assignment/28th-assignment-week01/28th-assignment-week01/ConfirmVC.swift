@@ -9,7 +9,7 @@ import UIKit
 
 class ConfirmVC: UIViewController {
     var name: String?
-    
+
     @IBOutlet var confirmButton: UIButton!
     @IBOutlet var titleLabel: UILabel!
 
@@ -20,9 +20,12 @@ class ConfirmVC: UIViewController {
 
     func initView() {
         titleLabel.numberOfLines = 0
-        titleLabel.text = "\(name)님\n환영합니다"
         titleLabel.sizeToFit()
-        
+
+        if let name = self.name {
+            titleLabel.text = "\(name)님\n환영합니다"
+        }
+
         confirmButton.titleLabel?.text = "확인"
         confirmButton.backgroundColor = UIColor(red: 255/255, green: 232/255, blue: 18/255, alpha: 1)
     }
