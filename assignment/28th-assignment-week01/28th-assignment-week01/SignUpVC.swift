@@ -18,6 +18,14 @@ class SignUpVC: UIViewController {
     }
 
     func initView() {
+        emailTextField.text = .none
+        passwordTextField.text = .none
+        passwordConfirmTextField.text = .none
+        
+        emailTextField.clearButtonMode = .always
+        passwordTextField.clearButtonMode = .always
+        passwordConfirmTextField.clearButtonMode = .always
+
         emailTextField.setUnderline(color: CGColor(gray: 1, alpha: 1), borderSize: 1)
         passwordTextField.setUnderline(color: CGColor(gray: 1, alpha: 1), borderSize: 1)
         passwordConfirmTextField.setUnderline(color: CGColor(gray: 1, alpha: 1), borderSize: 1)

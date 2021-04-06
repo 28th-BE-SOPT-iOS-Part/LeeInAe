@@ -26,7 +26,8 @@ class ConfirmVC: UIViewController {
             titleLabel.text = "\(name)님\n환영합니다"
         }
 
-        confirmButton.titleLabel?.text = "확인"
+        confirmButton.setTitle("확인", for: .normal)
+        confirmButton.titleLabel?.font = UIFont.systemFont(ofSize: 19)
         confirmButton.backgroundColor = UIColor(red: 255/255, green: 232/255, blue: 18/255, alpha: 1)
     }
 }

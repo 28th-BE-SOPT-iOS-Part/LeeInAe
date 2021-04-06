@@ -16,7 +16,15 @@ class LoginVC: UIViewController {
         initView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        emailTextField.text = .none
+        passwordTextField.text = .none
+    }
+
     func initView() {
+        emailTextField.clearButtonMode = .always
+        passwordTextField.clearButtonMode = .always
+
         emailTextField.setUnderline(color: CGColor(red: 130/255, green: 130/155, blue: 130/255, alpha: 1), borderSize: 1)
         passwordTextField.setUnderline(color: CGColor(red: 130/255, green: 130/155, blue: 130/255, alpha: 1), borderSize: 1)
         passwordTextField.isSecureTextEntry = true
@@ -36,9 +44,11 @@ class LoginVC: UIViewController {
 
         navigationController?.pushViewController(signUpVC, animated: true)
     }
-    
+
     @IBAction func unwindToLogin(_ unwindSegue: UIStoryboardSegue) {
         _ = unwindSegue.source
         // Use data from the view controller which initiated the unwind segue
     }
 }
+
+extension UITextField {}
