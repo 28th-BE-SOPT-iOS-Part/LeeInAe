@@ -10,6 +10,7 @@ import UIKit
 class LoginVC: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var loginButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,10 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func touchUpLoginButton(_ sender: Any) {
+        if emailTextField.text?.count == 0 || passwordTextField.text?.count == 0 {
+            return
+        }
+
         guard let confirmVC = storyboard?.instantiateViewController(identifier: "ConfirmVC") as? ConfirmVC else { return }
 
         confirmVC.name = emailTextField.text

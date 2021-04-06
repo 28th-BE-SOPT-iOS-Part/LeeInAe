@@ -21,7 +21,7 @@ class SignUpVC: UIViewController {
         emailTextField.text = .none
         passwordTextField.text = .none
         passwordConfirmTextField.text = .none
-        
+
         emailTextField.clearButtonMode = .always
         passwordTextField.clearButtonMode = .always
         passwordConfirmTextField.clearButtonMode = .always
@@ -35,6 +35,12 @@ class SignUpVC: UIViewController {
     }
 
     @IBAction func touchUpSignUpButton(_ sender: Any) {
+        if emailTextField.text?.count == 0 || passwordTextField.text?.count == 0 ||
+            passwordConfirmTextField.text?.count == 0
+        {
+            return
+        }
+
         guard let confirmVC = storyboard?.instantiateViewController(identifier: "ConfirmVC") as? ConfirmVC else { return }
         confirmVC.name = emailTextField.text
         confirmVC.modalPresentationStyle = .fullScreen

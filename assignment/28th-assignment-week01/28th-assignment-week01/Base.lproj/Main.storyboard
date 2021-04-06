@@ -71,6 +71,7 @@
                     <navigationItem key="navigationItem" id="QCQ-QX-cdE"/>
                     <connections>
                         <outlet property="emailTextField" destination="NvL-HX-pD6" id="OPP-Cd-xFC"/>
+                        <outlet property="loginButton" destination="aMV-gx-Thy" id="2fr-cy-FO3"/>
                         <outlet property="passwordTextField" destination="pbi-wd-Hts" id="TVf-rP-53F"/>
                     </connections>
                 </viewController>
