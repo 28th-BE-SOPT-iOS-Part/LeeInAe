@@ -79,6 +79,50 @@
             </objects>
             <point key="canvasLocation" x="1013.0434782608696" y="93.75"/>
         </scene>
+        <!--FirstVC-->
+        <scene sceneID="4UZ-7k-uta">
+            <objects>
+                <viewController storyboardIdentifier="FirstVC" id="rxY-MS-Stb" customClass="FirstVC" customModule="_8th_assignment_week01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KjE-3O-iGs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiC-ED-aLf">
+                                <rect key="frame" x="155" y="420" width="105" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="wind:" destination="rxY-MS-Stb" eventType="touchUpInside" id="D8L-IP-RtW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ta3-Tf-pVx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="G0g-iL-6S7" kind="presentation" identifier="manualSegue" id="Kde-Wi-80A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5M-2Q-rrv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="1077"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="GVu-s6-IHf">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="G0g-iL-6S7" customClass="SecondVC" customModule="_8th_assignment_week01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rPT-kr-uUo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uCi-3w-1B4"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5T-zV-wTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="1077"/>
+        </scene>
         <!--Sign UpVC-->
         <scene sceneID="aYI-Se-KdF">
             <objects>
@@ -202,6 +246,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

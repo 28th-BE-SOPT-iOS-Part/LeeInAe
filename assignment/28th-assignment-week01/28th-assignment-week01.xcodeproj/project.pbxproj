@@ -16,6 +16,8 @@
 		AB3E6517261B0E5C00FFE047 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E6516261B0E5C00FFE047 /* UITextField+Extension.swift */; };
 		AB3E651C261B527100FFE047 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E651B261B527100FFE047 /* SignUpVC.swift */; };
 		AB3E651F261B559F00FFE047 /* ConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E651E261B559F00FFE047 /* ConfirmVC.swift */; };
+		AB3E6565261F4F7E00FFE047 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E6564261F4F7E00FFE047 /* FirstVC.swift */; };
+		AB3E6568261F4F8B00FFE047 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E6567261F4F8B00FFE047 /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		AB3E6516261B0E5C00FFE047 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		AB3E651B261B527100FFE047 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		AB3E651E261B559F00FFE047 /* ConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmVC.swift; sourceTree = "<group>"; };
+		AB3E6564261F4F7E00FFE047 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		AB3E6567261F4F8B00FFE047 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				AB3E6516261B0E5C00FFE047 /* UITextField+Extension.swift */,
 				AB3E651B261B527100FFE047 /* SignUpVC.swift */,
 				AB3E651E261B559F00FFE047 /* ConfirmVC.swift */,
+				AB3E6564261F4F7E00FFE047 /* FirstVC.swift */,
+				AB3E6567261F4F8B00FFE047 /* SecondVC.swift */,
 			);
 			path = "28th-assignment-week01";
 			sourceTree = "<group>";
@@ -149,8 +155,10 @@
 				AB3E6501261B087200FFE047 /* LoginVC.swift in Sources */,
 				AB3E6517261B0E5C00FFE047 /* UITextField+Extension.swift in Sources */,
 				AB3E64FD261B087200FFE047 /* AppDelegate.swift in Sources */,
+				AB3E6565261F4F7E00FFE047 /* FirstVC.swift in Sources */,
 				AB3E651F261B559F00FFE047 /* ConfirmVC.swift in Sources */,
 				AB3E651C261B527100FFE047 /* SignUpVC.swift in Sources */,
+				AB3E6568261F4F8B00FFE047 /* SecondVC.swift in Sources */,
 				AB3E64FF261B087200FFE047 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
