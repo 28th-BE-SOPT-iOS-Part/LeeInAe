@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RMi-Pr-Y55">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rxY-MS-Stb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -102,7 +102,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="custom"/>
                                 <connections>
-                                    <segue destination="5Ml-w8-YDa" kind="custom" customClass="NewSegue" customModule="_8th_assignment_week01" customModuleProvider="target" id="TbK-PH-Fl3"/>
+                                    <segue destination="5Ml-w8-YDa" kind="custom" identifier="customSegue" customClass="NewSegue" customModule="_8th_assignment_week01" customModuleProvider="target" id="TbK-PH-Fl3"/>
                                 </connections>
                             </button>
                         </subviews>
