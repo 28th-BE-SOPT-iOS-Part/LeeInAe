@@ -52,8 +52,10 @@ extension ProfileDetailVC {
 extension ProfileDetailVC {
     @objc func handlePanGesture(gesture: UIPanGestureRecognizer) {
         let velocity = gesture.velocity(in: view)
-        if velocity.x.magnitude < velocity.y.magnitude, velocity.y.magnitude > 0 {
-            dismiss(animated: true, completion: nil)
+        if velocity.x.magnitude < velocity.y.magnitude {
+            if velocity.y > 0 {
+                dismiss(animated: true, completion: nil)
+            }
         }
     }
 }
