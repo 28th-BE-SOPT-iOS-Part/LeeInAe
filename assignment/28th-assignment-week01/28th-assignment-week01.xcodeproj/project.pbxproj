@@ -34,6 +34,7 @@
 		AB55FE112632D10F00EE8713 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE102632D10F00EE8713 /* MoreVC.swift */; };
 		AB55FE152632D58200EE8713 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE132632D58200EE8713 /* ProfileCell.swift */; };
 		AB55FE162632D58200EE8713 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB55FE142632D58200EE8713 /* ProfileCell.xib */; };
+		AB55FE192632D9D600EE8713 /* ProfileDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE182632D9D600EE8713 /* ProfileDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		AB55FE102632D10F00EE8713 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 		AB55FE132632D58200EE8713 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		AB55FE142632D58200EE8713 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		AB55FE182632D9D600EE8713 /* ProfileDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				AB55FE0D2632D10300EE8713 /* More.storyboard */,
 				AB55FE132632D58200EE8713 /* ProfileCell.swift */,
 				AB55FE142632D58200EE8713 /* ProfileCell.xib */,
+				AB55FE182632D9D600EE8713 /* ProfileDetailVC.swift */,
 			);
 			path = "28th-assignment-week01";
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				AB55FE152632D58200EE8713 /* ProfileCell.swift in Sources */,
 				AB3E6501261B087200FFE047 /* LoginVC.swift in Sources */,
 				AB3E6517261B0E5C00FFE047 /* UITextField+Extension.swift in Sources */,
+				AB55FE192632D9D600EE8713 /* ProfileDetailVC.swift in Sources */,
 				AB3E64FD261B087200FFE047 /* AppDelegate.swift in Sources */,
 				AB55FE112632D10F00EE8713 /* MoreVC.swift in Sources */,
 				AB3E6565261F4F7E00FFE047 /* FirstVC.swift in Sources */,
