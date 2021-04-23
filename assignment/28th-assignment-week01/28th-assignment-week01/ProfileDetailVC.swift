@@ -16,11 +16,14 @@ class ProfileDetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initView()
     }
 
-    @IBAction func touchUpCloseBtn(_ sender: Any) {}
+    // MARK: - IBActions
+
+    @IBAction func touchUpCloseBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 // MARK: - Custom Methods

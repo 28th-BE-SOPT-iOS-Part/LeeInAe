@@ -20,8 +20,4 @@ class ProfileCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
-    @IBAction func touchUpProfile(_ sender: Any) {
-        print("프로필 누름")
-    }
 }

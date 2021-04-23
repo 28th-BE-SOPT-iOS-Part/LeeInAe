@@ -12,34 +12,30 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="KGk-i7-Jjw" customClass="ProfileCell" customModule="_8th_assignment_week01" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="344" height="136"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="344" height="136"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdx-rS-FrQ">
-                        <rect key="frame" x="14" y="10" width="59" height="59"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friendtabProfileImg" translatesAutoresizingMaskIntoConstraints="NO" id="LyX-Lw-uJJ">
+                        <rect key="frame" x="14" y="10" width="60" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="Z7r-zU-2Fy"/>
-                            <constraint firstAttribute="width" secondItem="bdx-rS-FrQ" secondAttribute="height" id="feN-ca-Ope"/>
+                            <constraint firstAttribute="height" constant="60" id="Qg4-9B-nK1"/>
+                            <constraint firstAttribute="width" secondItem="LyX-Lw-uJJ" secondAttribute="height" multiplier="1:1" id="geH-e0-LAa"/>
                         </constraints>
-                        <state key="normal" image="friendtabProfileImg"/>
-                        <connections>
-                            <action selector="touchUpProfile:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2M2-w7-dbi"/>
-                        </connections>
-                    </button>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나야 나" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2g-1U-CgP">
-                        <rect key="frame" x="83" y="29" width="48.5" height="21"/>
+                        <rect key="frame" x="84" y="29.5" width="48.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="y2g-1U-CgP" firstAttribute="leading" secondItem="bdx-rS-FrQ" secondAttribute="trailing" constant="10" id="CtH-81-h2B"/>
-                    <constraint firstAttribute="bottom" secondItem="bdx-rS-FrQ" secondAttribute="bottom" constant="10" id="XoJ-Ig-HYI"/>
-                    <constraint firstItem="bdx-rS-FrQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="bva-9T-IXR"/>
-                    <constraint firstItem="y2g-1U-CgP" firstAttribute="centerY" secondItem="bdx-rS-FrQ" secondAttribute="centerY" id="jtU-o9-a2K"/>
-                    <constraint firstItem="bdx-rS-FrQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="pgM-f3-9WW"/>
+                    <constraint firstItem="y2g-1U-CgP" firstAttribute="leading" secondItem="LyX-Lw-uJJ" secondAttribute="trailing" constant="10" id="DHU-Jy-eY7"/>
+                    <constraint firstItem="y2g-1U-CgP" firstAttribute="centerY" secondItem="LyX-Lw-uJJ" secondAttribute="centerY" id="SRK-Wx-LV2"/>
+                    <constraint firstItem="LyX-Lw-uJJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="bXd-lp-Xce"/>
+                    <constraint firstAttribute="bottom" secondItem="LyX-Lw-uJJ" secondAttribute="bottom" constant="10" id="dLm-GW-wTx"/>
+                    <constraint firstItem="LyX-Lw-uJJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="u9d-yW-4XC"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

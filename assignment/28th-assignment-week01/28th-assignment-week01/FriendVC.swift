@@ -36,7 +36,15 @@ extension FriendVC {
 
 // MARK: - UITableViewDelegate
 
-extension FriendVC: UITableViewDelegate {}
+extension FriendVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Friend", bundle: nil)
+        guard let profileDetailVC = storyboard.instantiateViewController(identifier: ProfileDetailVC.identifier) as? ProfileDetailVC else { return }
+
+        profileDetailVC.modalPresentationStyle = .fullScreen
+        present(profileDetailVC, animated: true, completion: nil)
+    }
+}
 
 // MARK: - UITableviewDataSource
 

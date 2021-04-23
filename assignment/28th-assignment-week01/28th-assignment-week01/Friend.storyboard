@@ -61,7 +61,7 @@
         <!--Profile DetailVC-->
         <scene sceneID="S50-ND-SEW">
             <objects>
-                <viewController id="d5M-Nm-WLU" customClass="ProfileDetailVC" customModule="_8th_assignment_week01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileDetailVC" id="d5M-Nm-WLU" customClass="ProfileDetailVC" customModule="_8th_assignment_week01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wRP-z9-Thn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +108,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="5ok-5X-Aqs" firstAttribute="centerX" secondItem="krI-cB-e0Q" secondAttribute="centerX" id="6IA-yS-XwD"/>
                                             <constraint firstItem="YgF-Zx-bNd" firstAttribute="top" secondItem="krI-cB-e0Q" secondAttribute="top" id="8Ev-GR-TfV"/>
@@ -139,7 +139,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="VQF-Yj-S6C" secondAttribute="bottom" id="5BW-Zk-Et0"/>
                                             <constraint firstItem="VQF-Yj-S6C" firstAttribute="top" secondItem="xCC-FQ-PPD" secondAttribute="top" id="7NA-IZ-IZy"/>
@@ -170,7 +170,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="3TD-uS-2wV" secondAttribute="trailing" id="FO1-g1-1uO"/>
                                             <constraint firstItem="eB7-fU-xgK" firstAttribute="width" secondItem="Uo2-ag-LZe" secondAttribute="width" multiplier="18:96" id="N6j-hM-EfU"/>
@@ -224,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Dd-B4-e8n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1878.2608695652175" y="15.401785714285714"/>
+            <point key="canvasLocation" x="1117" y="57"/>
         </scene>
     </scenes>
     <resources>
