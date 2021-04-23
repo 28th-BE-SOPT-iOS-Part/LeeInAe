@@ -22,8 +22,16 @@
 		AB3E656E2620A1BF00FFE047 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E656D2620A1BF00FFE047 /* ThirdVC.swift */; };
 		AB55FDEE2632C8BA00EE8713 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB55FDED2632C8BA00EE8713 /* TabBar.storyboard */; };
 		AB55FDF12632C8FB00EE8713 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FDF02632C8FB00EE8713 /* TabBarVC.swift */; };
-		AB55FDF52632CAEF00EE8713 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB55FDF42632CAEF00EE8713 /* Detail.storyboard */; };
+		AB55FDF52632CAEF00EE8713 /* Friend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB55FDF42632CAEF00EE8713 /* Friend.storyboard */; };
 		AB55FDF82632CB0D00EE8713 /* FriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FDF72632CB0D00EE8713 /* FriendVC.swift */; };
+		AB55FDFC2632D01300EE8713 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB55FDFB2632D01300EE8713 /* Chat.storyboard */; };
+		AB55FDFF2632D02600EE8713 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FDFE2632D02600EE8713 /* ChatVC.swift */; };
+		AB55FE022632D06800EE8713 /* Entertain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB55FE012632D06800EE8713 /* Entertain.storyboard */; };
+		AB55FE052632D07B00EE8713 /* EntertainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE042632D07B00EE8713 /* EntertainVC.swift */; };
+		AB55FE082632D09900EE8713 /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB55FE072632D09900EE8713 /* Shopping.storyboard */; };
+		AB55FE0B2632D0C200EE8713 /* ShoppingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE0A2632D0C200EE8713 /* ShoppingVC.swift */; };
+		AB55FE0E2632D10300EE8713 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB55FE0D2632D10300EE8713 /* More.storyboard */; };
+		AB55FE112632D10F00EE8713 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE102632D10F00EE8713 /* MoreVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +52,16 @@
 		AB3E656D2620A1BF00FFE047 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		AB55FDED2632C8BA00EE8713 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		AB55FDF02632C8FB00EE8713 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
-		AB55FDF42632CAEF00EE8713 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		AB55FDF42632CAEF00EE8713 /* Friend.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Friend.storyboard; sourceTree = "<group>"; };
 		AB55FDF72632CB0D00EE8713 /* FriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVC.swift; sourceTree = "<group>"; };
+		AB55FDFB2632D01300EE8713 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		AB55FDFE2632D02600EE8713 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		AB55FE012632D06800EE8713 /* Entertain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Entertain.storyboard; sourceTree = "<group>"; };
+		AB55FE042632D07B00EE8713 /* EntertainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntertainVC.swift; sourceTree = "<group>"; };
+		AB55FE072632D09900EE8713 /* Shopping.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shopping.storyboard; sourceTree = "<group>"; };
+		AB55FE0A2632D0C200EE8713 /* ShoppingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingVC.swift; sourceTree = "<group>"; };
+		AB55FE0D2632D10300EE8713 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		AB55FE102632D10F00EE8713 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,11 +107,19 @@
 				AB3E6564261F4F7E00FFE047 /* FirstVC.swift */,
 				AB3E6567261F4F8B00FFE047 /* SecondVC.swift */,
 				AB3E656A2620A06B00FFE047 /* NewSegue.swift */,
+				AB55FE102632D10F00EE8713 /* MoreVC.swift */,
 				AB3E656D2620A1BF00FFE047 /* ThirdVC.swift */,
 				AB55FDED2632C8BA00EE8713 /* TabBar.storyboard */,
 				AB55FDF02632C8FB00EE8713 /* TabBarVC.swift */,
-				AB55FDF42632CAEF00EE8713 /* Detail.storyboard */,
+				AB55FDF42632CAEF00EE8713 /* Friend.storyboard */,
 				AB55FDF72632CB0D00EE8713 /* FriendVC.swift */,
+				AB55FDFB2632D01300EE8713 /* Chat.storyboard */,
+				AB55FDFE2632D02600EE8713 /* ChatVC.swift */,
+				AB55FE012632D06800EE8713 /* Entertain.storyboard */,
+				AB55FE042632D07B00EE8713 /* EntertainVC.swift */,
+				AB55FE072632D09900EE8713 /* Shopping.storyboard */,
+				AB55FE0A2632D0C200EE8713 /* ShoppingVC.swift */,
+				AB55FE0D2632D10300EE8713 /* More.storyboard */,
 			);
 			path = "28th-assignment-week01";
 			sourceTree = "<group>";
@@ -157,10 +181,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB55FDFC2632D01300EE8713 /* Chat.storyboard in Resources */,
+				AB55FE0E2632D10300EE8713 /* More.storyboard in Resources */,
 				AB55FDEE2632C8BA00EE8713 /* TabBar.storyboard in Resources */,
+				AB55FE082632D09900EE8713 /* Shopping.storyboard in Resources */,
 				AB3E6509261B087500FFE047 /* LaunchScreen.storyboard in Resources */,
 				AB3E6506261B087500FFE047 /* Assets.xcassets in Resources */,
-				AB55FDF52632CAEF00EE8713 /* Detail.storyboard in Resources */,
+				AB55FE022632D06800EE8713 /* Entertain.storyboard in Resources */,
+				AB55FDF52632CAEF00EE8713 /* Friend.storyboard in Resources */,
 				AB3E6504261B087200FFE047 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,14 +203,18 @@
 				AB3E6501261B087200FFE047 /* LoginVC.swift in Sources */,
 				AB3E6517261B0E5C00FFE047 /* UITextField+Extension.swift in Sources */,
 				AB3E64FD261B087200FFE047 /* AppDelegate.swift in Sources */,
+				AB55FE112632D10F00EE8713 /* MoreVC.swift in Sources */,
 				AB3E6565261F4F7E00FFE047 /* FirstVC.swift in Sources */,
 				AB3E656E2620A1BF00FFE047 /* ThirdVC.swift in Sources */,
+				AB55FE052632D07B00EE8713 /* EntertainVC.swift in Sources */,
+				AB55FE0B2632D0C200EE8713 /* ShoppingVC.swift in Sources */,
 				AB3E651F261B559F00FFE047 /* ConfirmVC.swift in Sources */,
 				AB3E651C261B527100FFE047 /* SignUpVC.swift in Sources */,
 				AB3E656B2620A06B00FFE047 /* NewSegue.swift in Sources */,
 				AB55FDF12632C8FB00EE8713 /* TabBarVC.swift in Sources */,
 				AB3E6568261F4F8B00FFE047 /* SecondVC.swift in Sources */,
 				AB55FDF82632CB0D00EE8713 /* FriendVC.swift in Sources */,
+				AB55FDFF2632D02600EE8713 /* ChatVC.swift in Sources */,
 				AB3E64FF261B087200FFE047 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
