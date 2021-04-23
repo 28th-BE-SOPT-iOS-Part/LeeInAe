@@ -36,12 +36,11 @@ class LoginVC: UIViewController {
             return
         }
 
-        guard let confirmVC = storyboard?.instantiateViewController(identifier: "ConfirmVC") as? ConfirmVC else { return }
+        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+        guard let tabBarVC = storyboard.instantiateViewController(identifier: TabBarVC.identifier) as? TabBarVC else { return }
 
-        confirmVC.name = emailTextField.text
-        confirmVC.modalPresentationStyle = .fullScreen
-
-        present(confirmVC, animated: true, completion: nil)
+        tabBarVC.modalPresentationStyle = .fullScreen
+        present(tabBarVC, animated: true, completion: nil)
     }
 
     @IBAction func touchUpSignUpButton(_ sender: Any) {

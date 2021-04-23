@@ -41,10 +41,10 @@ class SignUpVC: UIViewController {
             return
         }
 
-        guard let confirmVC = storyboard?.instantiateViewController(identifier: "ConfirmVC") as? ConfirmVC else { return }
-        confirmVC.name = emailTextField.text
-        confirmVC.modalPresentationStyle = .fullScreen
+        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+        guard let tabBarVC = storyboard.instantiateViewController(identifier: TabBarVC.identifier) as? TabBarVC else { return }
 
-        present(confirmVC, animated: true, completion: nil)
+        tabBarVC.modalPresentationStyle = .fullScreen
+        present(tabBarVC, animated: true, completion: nil)
     }
 }
