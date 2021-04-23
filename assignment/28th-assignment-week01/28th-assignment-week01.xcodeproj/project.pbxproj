@@ -32,6 +32,8 @@
 		AB55FE0B2632D0C200EE8713 /* ShoppingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE0A2632D0C200EE8713 /* ShoppingVC.swift */; };
 		AB55FE0E2632D10300EE8713 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB55FE0D2632D10300EE8713 /* More.storyboard */; };
 		AB55FE112632D10F00EE8713 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE102632D10F00EE8713 /* MoreVC.swift */; };
+		AB55FE152632D58200EE8713 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE132632D58200EE8713 /* ProfileCell.swift */; };
+		AB55FE162632D58200EE8713 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB55FE142632D58200EE8713 /* ProfileCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		AB55FE0A2632D0C200EE8713 /* ShoppingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingVC.swift; sourceTree = "<group>"; };
 		AB55FE0D2632D10300EE8713 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
 		AB55FE102632D10F00EE8713 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		AB55FE132632D58200EE8713 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		AB55FE142632D58200EE8713 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				AB55FE072632D09900EE8713 /* Shopping.storyboard */,
 				AB55FE0A2632D0C200EE8713 /* ShoppingVC.swift */,
 				AB55FE0D2632D10300EE8713 /* More.storyboard */,
+				AB55FE132632D58200EE8713 /* ProfileCell.swift */,
+				AB55FE142632D58200EE8713 /* ProfileCell.xib */,
 			);
 			path = "28th-assignment-week01";
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 				AB55FE022632D06800EE8713 /* Entertain.storyboard in Resources */,
 				AB55FDF52632CAEF00EE8713 /* Friend.storyboard in Resources */,
 				AB3E6504261B087200FFE047 /* Main.storyboard in Resources */,
+				AB55FE162632D58200EE8713 /* ProfileCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB55FE152632D58200EE8713 /* ProfileCell.swift in Sources */,
 				AB3E6501261B087200FFE047 /* LoginVC.swift in Sources */,
 				AB3E6517261B0E5C00FFE047 /* UITextField+Extension.swift in Sources */,
 				AB3E64FD261B087200FFE047 /* AppDelegate.swift in Sources */,

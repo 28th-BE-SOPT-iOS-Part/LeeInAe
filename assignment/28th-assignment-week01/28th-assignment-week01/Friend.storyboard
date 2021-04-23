@@ -16,21 +16,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHT-Kg-jU2">
-                                <rect key="frame" x="186" y="269" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TWd-fQ-7Xu">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gjk-2w-zFN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="친구" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jm9-l9-fdU">
+                                        <rect key="frame" x="14" y="9" width="38.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="jm9-l9-fdU" firstAttribute="leading" secondItem="Gjk-2w-zFN" secondAttribute="leading" constant="14" id="2AB-fB-DwF"/>
+                                    <constraint firstItem="jm9-l9-fdU" firstAttribute="centerY" secondItem="Gjk-2w-zFN" secondAttribute="centerY" id="NqK-9q-mQB"/>
+                                    <constraint firstAttribute="width" secondItem="Gjk-2w-zFN" secondAttribute="height" multiplier="375:40" id="Raa-th-YdJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b7p-yb-8D7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TWd-fQ-7Xu" firstAttribute="top" secondItem="Gjk-2w-zFN" secondAttribute="bottom" id="1hZ-4P-MBu"/>
+                            <constraint firstItem="b7p-yb-8D7" firstAttribute="trailing" secondItem="Gjk-2w-zFN" secondAttribute="trailing" id="1m3-rY-GLh"/>
+                            <constraint firstItem="Gjk-2w-zFN" firstAttribute="leading" secondItem="b7p-yb-8D7" secondAttribute="leading" id="29d-cG-3Bb"/>
+                            <constraint firstItem="b7p-yb-8D7" firstAttribute="bottom" secondItem="TWd-fQ-7Xu" secondAttribute="bottom" id="3Nq-DR-k1s"/>
+                            <constraint firstItem="b7p-yb-8D7" firstAttribute="trailing" secondItem="TWd-fQ-7Xu" secondAttribute="trailing" id="Dpd-nR-Smr"/>
+                            <constraint firstItem="TWd-fQ-7Xu" firstAttribute="leading" secondItem="b7p-yb-8D7" secondAttribute="leading" id="K7s-ro-pSa"/>
+                            <constraint firstItem="Gjk-2w-zFN" firstAttribute="top" secondItem="b7p-yb-8D7" secondAttribute="top" id="OHc-qS-sVl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="friendTableView" destination="TWd-fQ-7Xu" id="dtj-hM-rUN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzf-YY-Zv4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="291" y="57"/>
+            <point key="canvasLocation" x="289.85507246376812" y="56.919642857142854"/>
         </scene>
     </scenes>
     <resources>
