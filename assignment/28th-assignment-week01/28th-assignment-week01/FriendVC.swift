@@ -41,7 +41,7 @@ extension FriendVC: UITableViewDelegate {
         let storyboard = UIStoryboard(name: "Friend", bundle: nil)
         guard let profileDetailVC = storyboard.instantiateViewController(identifier: ProfileDetailVC.identifier) as? ProfileDetailVC else { return }
 
-        profileDetailVC.modalPresentationStyle = .fullScreen
+        profileDetailVC.modalPresentationStyle = .overFullScreen
         present(profileDetailVC, animated: true, completion: nil)
     }
 }
