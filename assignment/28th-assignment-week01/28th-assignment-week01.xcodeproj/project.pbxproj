@@ -35,6 +35,8 @@
 		AB55FE152632D58200EE8713 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE132632D58200EE8713 /* ProfileCell.swift */; };
 		AB55FE162632D58200EE8713 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB55FE142632D58200EE8713 /* ProfileCell.xib */; };
 		AB55FE192632D9D600EE8713 /* ProfileDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55FE182632D9D600EE8713 /* ProfileDetailVC.swift */; };
+		ABF7FF1526419905007B60BB /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7FF1426419905007B60BB /* UserDataModel.swift */; };
+		ABF7FF1B26419CB7007B60BB /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7FF1A26419CB7007B60BB /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		AB55FE132632D58200EE8713 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		AB55FE142632D58200EE8713 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		AB55FE182632D9D600EE8713 /* ProfileDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailVC.swift; sourceTree = "<group>"; };
+		ABF7FF1426419905007B60BB /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		ABF7FF1A26419CB7007B60BB /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +115,13 @@
 		ABF7FF0826419037007B60BB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				ABF7FF13264198E6007B60BB /* Model */,
 				AB3E64FC261B087200FFE047 /* AppDelegate.swift */,
 				AB3E64FE261B087200FFE047 /* SceneDelegate.swift */,
 				ABF7FF10264190EE007B60BB /* Extension */,
 				ABF7FF0F264190DA007B60BB /* Class */,
-				ABF7FF0D264190B8007B60BB /* Cell */,
 				ABF7FF0B26419054007B60BB /* VC */,
+				ABF7FF0D264190B8007B60BB /* Cell */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -193,8 +198,17 @@
 			isa = PBXGroup;
 			children = (
 				AB3E6516261B0E5C00FFE047 /* UITextField+Extension.swift */,
+				ABF7FF1A26419CB7007B60BB /* UIFont+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		ABF7FF13264198E6007B60BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABF7FF1426419905007B60BB /* UserDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +290,7 @@
 			files = (
 				AB55FE152632D58200EE8713 /* ProfileCell.swift in Sources */,
 				AB3E6501261B087200FFE047 /* LoginVC.swift in Sources */,
+				ABF7FF1526419905007B60BB /* UserDataModel.swift in Sources */,
 				AB3E6517261B0E5C00FFE047 /* UITextField+Extension.swift in Sources */,
 				AB55FE192632D9D600EE8713 /* ProfileDetailVC.swift in Sources */,
 				AB3E64FD261B087200FFE047 /* AppDelegate.swift in Sources */,
@@ -291,6 +306,7 @@
 				AB3E6568261F4F8B00FFE047 /* SecondVC.swift in Sources */,
 				AB55FDF82632CB0D00EE8713 /* FriendVC.swift in Sources */,
 				AB55FDFF2632D02600EE8713 /* ChatVC.swift in Sources */,
+				ABF7FF1B26419CB7007B60BB /* UIFont+Extension.swift in Sources */,
 				AB3E64FF261B087200FFE047 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
