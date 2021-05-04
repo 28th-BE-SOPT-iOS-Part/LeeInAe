@@ -100,37 +100,101 @@
 		AB3E64FB261B087200FFE047 /* 28th-assignment-week01 */ = {
 			isa = PBXGroup;
 			children = (
+				ABF7FF0926419040007B60BB /* Resource */,
+				ABF7FF0826419037007B60BB /* Source */,
+				AB3E6505261B087500FFE047 /* Assets.xcassets */,
+				AB3E650A261B087500FFE047 /* Info.plist */,
+			);
+			path = "28th-assignment-week01";
+			sourceTree = "<group>";
+		};
+		ABF7FF0826419037007B60BB /* Source */ = {
+			isa = PBXGroup;
+			children = (
 				AB3E64FC261B087200FFE047 /* AppDelegate.swift */,
 				AB3E64FE261B087200FFE047 /* SceneDelegate.swift */,
-				AB3E6500261B087200FFE047 /* LoginVC.swift */,
+				ABF7FF10264190EE007B60BB /* Extension */,
+				ABF7FF0F264190DA007B60BB /* Class */,
+				ABF7FF0D264190B8007B60BB /* Cell */,
+				ABF7FF0B26419054007B60BB /* VC */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		ABF7FF0926419040007B60BB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ABF7FF0C26419059007B60BB /* Xib */,
+				ABF7FF0A2641904D007B60BB /* Storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		ABF7FF0A2641904D007B60BB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AB55FDF42632CAEF00EE8713 /* Friend.storyboard */,
+				AB55FDFB2632D01300EE8713 /* Chat.storyboard */,
+				AB55FE012632D06800EE8713 /* Entertain.storyboard */,
+				AB55FE072632D09900EE8713 /* Shopping.storyboard */,
+				AB55FE0D2632D10300EE8713 /* More.storyboard */,
 				AB3E6502261B087200FFE047 /* Main.storyboard */,
-				AB3E6505261B087500FFE047 /* Assets.xcassets */,
 				AB3E6507261B087500FFE047 /* LaunchScreen.storyboard */,
-				AB3E650A261B087500FFE047 /* Info.plist */,
-				AB3E6516261B0E5C00FFE047 /* UITextField+Extension.swift */,
+				AB55FDED2632C8BA00EE8713 /* TabBar.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		ABF7FF0B26419054007B60BB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				AB3E6500261B087200FFE047 /* LoginVC.swift */,
+				AB55FDF02632C8FB00EE8713 /* TabBarVC.swift */,
+				AB55FDF72632CB0D00EE8713 /* FriendVC.swift */,
+				AB55FDFE2632D02600EE8713 /* ChatVC.swift */,
+				AB55FE042632D07B00EE8713 /* EntertainVC.swift */,
+				AB55FE0A2632D0C200EE8713 /* ShoppingVC.swift */,
+				AB55FE182632D9D600EE8713 /* ProfileDetailVC.swift */,
 				AB3E651B261B527100FFE047 /* SignUpVC.swift */,
 				AB3E651E261B559F00FFE047 /* ConfirmVC.swift */,
 				AB3E6564261F4F7E00FFE047 /* FirstVC.swift */,
 				AB3E6567261F4F8B00FFE047 /* SecondVC.swift */,
-				AB3E656A2620A06B00FFE047 /* NewSegue.swift */,
 				AB55FE102632D10F00EE8713 /* MoreVC.swift */,
 				AB3E656D2620A1BF00FFE047 /* ThirdVC.swift */,
-				AB55FDED2632C8BA00EE8713 /* TabBar.storyboard */,
-				AB55FDF02632C8FB00EE8713 /* TabBarVC.swift */,
-				AB55FDF42632CAEF00EE8713 /* Friend.storyboard */,
-				AB55FDF72632CB0D00EE8713 /* FriendVC.swift */,
-				AB55FDFB2632D01300EE8713 /* Chat.storyboard */,
-				AB55FDFE2632D02600EE8713 /* ChatVC.swift */,
-				AB55FE012632D06800EE8713 /* Entertain.storyboard */,
-				AB55FE042632D07B00EE8713 /* EntertainVC.swift */,
-				AB55FE072632D09900EE8713 /* Shopping.storyboard */,
-				AB55FE0A2632D0C200EE8713 /* ShoppingVC.swift */,
-				AB55FE0D2632D10300EE8713 /* More.storyboard */,
-				AB55FE132632D58200EE8713 /* ProfileCell.swift */,
-				AB55FE142632D58200EE8713 /* ProfileCell.xib */,
-				AB55FE182632D9D600EE8713 /* ProfileDetailVC.swift */,
 			);
-			path = "28th-assignment-week01";
+			path = VC;
+			sourceTree = "<group>";
+		};
+		ABF7FF0C26419059007B60BB /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				AB55FE142632D58200EE8713 /* ProfileCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		ABF7FF0D264190B8007B60BB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AB55FE132632D58200EE8713 /* ProfileCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		ABF7FF0F264190DA007B60BB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				AB3E656A2620A06B00FFE047 /* NewSegue.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		ABF7FF10264190EE007B60BB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AB3E6516261B0E5C00FFE047 /* UITextField+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
