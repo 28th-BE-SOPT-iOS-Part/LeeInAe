@@ -11,6 +11,9 @@ class ProfileDetailVC: UIViewController {
     // MARK: - local Variables
 
     static let identifier = "ProfileDetailVC"
+    var image: UIImage?
+    var name: String?
+    var state: String?
 
     // MARK: - IBOutlets
 
@@ -39,11 +42,15 @@ extension ProfileDetailVC {
 
         view.backgroundColor = UIColor(red: 159/255, green: 167/255, blue: 173/255, alpha: 1)
 
-        profileImage.image = UIImage(named: "friendtabProfileImg")
-
-        nameLabel.text = "이인애"
         nameLabel.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 18)
         nameLabel.textColor = .white
+
+        if let profile = image,
+           let name = self.name
+        {
+            nameLabel.text = "\(name)"
+            profileImage.image = profile
+        }
     }
 }
 
