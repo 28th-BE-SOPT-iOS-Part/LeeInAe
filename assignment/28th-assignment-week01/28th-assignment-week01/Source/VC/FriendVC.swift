@@ -32,6 +32,10 @@ extension FriendVC {
         friendTableView.delegate = self
         friendTableView.dataSource = self
 
+        friendTableView.separatorStyle = .none
+        friendTableView.estimatedRowHeight = 200
+        friendTableView.rowHeight = UITableView.automaticDimension
+
         let profileNib = UINib(nibName: "ProfileCell", bundle: nil)
         friendTableView.register(profileNib, forCellReuseIdentifier: ProfileCell.identifier)
     }
@@ -92,6 +96,10 @@ extension FriendVC: UITableViewDelegate {
         profileDetailVC.modalPresentationStyle = .overFullScreen
         present(profileDetailVC, animated: true, completion: nil)
     }
+
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
+    }
 }
 
 // MARK: - UITableviewDataSource
@@ -112,9 +120,9 @@ extension FriendVC: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCell.identifier) as? ProfileCell else { return UITableViewCell() }
 
         if indexPath.section == 0 {
-            cell.initCell(user: UserDataModel(imageName: "friendtabProfileImg", name: "이내", state: "비 그만.."))
+            cell.initCell(user: UserDataModel(imageName: "friendtabProfileImg", name: "이내", state: "비 그만.."), isUser: true)
         } else {
-            cell.initCell(user: friendList[indexPath.row])
+            cell.initCell(user: friendList[indexPath.row], isUser: false)
         }
 
         return cell

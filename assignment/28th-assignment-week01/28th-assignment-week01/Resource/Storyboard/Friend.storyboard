@@ -29,12 +29,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niu-EP-UMK">
+                                        <rect key="frame" x="370" y="0.0" width="44" height="44"/>
+                                        <state key="normal" image="settingIcon"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="jm9-l9-fdU" firstAttribute="leading" secondItem="Gjk-2w-zFN" secondAttribute="leading" constant="14" id="2AB-fB-DwF"/>
+                                    <constraint firstItem="niu-EP-UMK" firstAttribute="height" secondItem="Gjk-2w-zFN" secondAttribute="height" id="5qX-dx-lfo"/>
+                                    <constraint firstAttribute="trailing" secondItem="niu-EP-UMK" secondAttribute="trailing" id="JeH-eW-deJ"/>
+                                    <constraint firstItem="niu-EP-UMK" firstAttribute="width" secondItem="Gjk-2w-zFN" secondAttribute="height" multiplier="1:1" id="NLY-cL-I6g"/>
                                     <constraint firstItem="jm9-l9-fdU" firstAttribute="centerY" secondItem="Gjk-2w-zFN" secondAttribute="centerY" id="NqK-9q-mQB"/>
                                     <constraint firstAttribute="width" secondItem="Gjk-2w-zFN" secondAttribute="height" multiplier="375:40" id="Raa-th-YdJ"/>
+                                    <constraint firstItem="niu-EP-UMK" firstAttribute="top" secondItem="Gjk-2w-zFN" secondAttribute="top" id="cSt-gU-ndp"/>
+                                    <constraint firstAttribute="bottom" secondItem="niu-EP-UMK" secondAttribute="bottom" id="vQL-3D-ftC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -232,6 +241,7 @@
         <image name="profileEditImg" width="19.5" height="21.5"/>
         <image name="profileStoryImg" width="20.5" height="23.5"/>
         <image name="profileTalkImg" width="20.5" height="19.5"/>
+        <image name="settingIcon" width="19" height="19"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

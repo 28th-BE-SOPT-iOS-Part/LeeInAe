@@ -25,11 +25,14 @@ class ProfileCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func initCell(user: UserDataModel) {
+    func initCell(user: UserDataModel, isUser: Bool) {
+        let width = isUser ? UIScreen.main.bounds.width * (40/375) : UIScreen.main.bounds.width * (60/375)
+
         profileImage.image = user.image
+        profileImage.frame.size = CGSize(width: width, height: width)
 
         userNameLabel.text = user.name
-        userNameLabel.font = UIFont.AppleSDGothic(type: .semiBold, size: 16)
+        userNameLabel.font = isUser ? UIFont.AppleSDGothic(type: .semiBold, size: 16) : UIFont.AppleSDGothic(type: .semiBold, size: 12)
         userNameLabel.textColor = UIColor.black
 
         stateLabel.text = user.state
