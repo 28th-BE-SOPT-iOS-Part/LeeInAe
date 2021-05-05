@@ -169,6 +169,16 @@ extension FriendVC: UITableViewDelegate {
                                        return UIMenu(title: "", children: [chatAction, voiceAction, faceAction, giftAction])
                                    })
     }
+
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        if indexPath.section == 1 {
+            let hideAction = UIContextualAction(style: .normal, title: "숨김", handler: { _, _, _ in })
+            let deleteAction = UIContextualAction(style: .destructive, title: "차단", handler: { _, _, _ in })
+
+            return UISwipeActionsConfiguration(actions: [deleteAction, hideAction])
+        }
+        return nil
+    }
 }
 
 // MARK: - UITableviewDataSource
