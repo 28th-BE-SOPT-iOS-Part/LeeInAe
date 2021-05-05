@@ -32,6 +32,9 @@
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niu-EP-UMK">
                                         <rect key="frame" x="370" y="0.0" width="44" height="44"/>
                                         <state key="normal" image="settingIcon"/>
+                                        <connections>
+                                            <action selector="touchUpSettingBtn:" destination="TOi-9r-mqP" eventType="touchUpInside" id="BAG-OM-i22"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>

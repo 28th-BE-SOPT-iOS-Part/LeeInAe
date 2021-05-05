@@ -12,12 +12,45 @@ class FriendVC: UIViewController {
 
     static let identifier = "FriendVC"
     static let user = UserDataModel(imageName: "friendtabProfileImg", name: "이내", state: "비 그만 와 ..")
-    
+
     private var friendList: [UserDataModel] = []
 
     // MARK: - IBOutlets
 
     @IBOutlet var friendTableView: UITableView!
+
+    // MARK: - IBActions
+
+    @IBAction func touchUpSettingBtn(_ sender: UIButton) {
+        let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+
+        let editAction = UIAlertAction(title: "편집", style: .default, handler: {
+            (_: UIAlertAction!) -> Void in
+
+        })
+
+        let saveAction = UIAlertAction(title: "친구 관리", style: .default, handler: {
+            (_: UIAlertAction!) -> Void in
+
+        })
+
+        let totalSettingAction = UIAlertAction(title: "전체 설정", style: .default, handler: {
+            (_: UIAlertAction!) -> Void in
+
+        })
+
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: {
+            (_: UIAlertAction!) -> Void in
+
+        })
+
+        optionMenu.addAction(editAction)
+        optionMenu.addAction(saveAction)
+        optionMenu.addAction(totalSettingAction)
+        optionMenu.addAction(cancelAction)
+
+        present(optionMenu, animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
