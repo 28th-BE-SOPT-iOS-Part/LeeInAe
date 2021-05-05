@@ -11,8 +11,9 @@ class FriendVC: UIViewController {
     // MARK: - local variables
 
     static let identifier = "FriendVC"
+    static let user = UserDataModel(imageName: "friendtabProfileImg", name: "이내", state: "비 그만 와 ..")
+    
     private var friendList: [UserDataModel] = []
-    private var user = UserDataModel(imageName: "friendtabProfileImg", name: "이내", state: "비 그만 와 ..")
 
     // MARK: - IBOutlets
 
@@ -94,8 +95,8 @@ extension FriendVC: UITableViewDelegate {
         let storyboard = UIStoryboard(name: "Friend", bundle: nil)
         guard let profileDetailVC = storyboard.instantiateViewController(identifier: ProfileDetailVC.identifier) as? ProfileDetailVC else { return }
 
-        profileDetailVC.image = indexPath.section == 0 ? user.image : friendList[indexPath.row].image
-        profileDetailVC.name = indexPath.section == 0 ? user.name : friendList[indexPath.row].name
+        profileDetailVC.image = indexPath.section == 0 ? FriendVC.user.image : friendList[indexPath.row].image
+        profileDetailVC.name = indexPath.section == 0 ? FriendVC.user.name : friendList[indexPath.row].name
 
         profileDetailVC.modalPresentationStyle = .overFullScreen
         present(profileDetailVC, animated: true, completion: nil)
@@ -124,7 +125,7 @@ extension FriendVC: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCell.identifier) as? ProfileCell else { return UITableViewCell() }
 
         if indexPath.section == 0 {
-            cell.initCell(user: user, isUser: true)
+            cell.initCell(user: FriendVC.user, isUser: true)
         } else {
             cell.initCell(user: friendList[indexPath.row], isUser: false)
         }
