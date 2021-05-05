@@ -138,6 +138,37 @@ extension FriendVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
     }
+
+    // FIXME: - vc가 안 줄어서 뜨는데요..
+    func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        UIContextMenuConfiguration(identifier: nil,
+                                   previewProvider: {
+                                       let storyboard = UIStoryboard(name: "Friend", bundle: nil)
+                                       if let profileDetailVC = storyboard.instantiateViewController(identifier: ProfileDetailVC.identifier) as? ProfileDetailVC {
+                                           profileDetailVC.image = indexPath.section == 0 ? FriendVC.user.image : self.friendList[indexPath.row].image
+                                           profileDetailVC.name = indexPath.section == 0 ? FriendVC.user.name : self.friendList[indexPath.row].name
+
+                                           return profileDetailVC
+                                       } else { return nil }
+                                   },
+                                   actionProvider: { _ in
+                                       let chatAction = UIAction(title: NSLocalizedString("채팅하기", comment: "")) { _ in }
+
+                                       let voiceAction =
+                                           UIAction(title: NSLocalizedString("보이스톡", comment: "")) { _ in
+                                           }
+
+                                       let faceAction =
+                                           UIAction(title: NSLocalizedString("페이스톡", comment: "")) { _ in
+                                           }
+
+                                       let giftAction =
+                                           UIAction(title: NSLocalizedString("선물하기", comment: "")) { _ in
+                                           }
+
+                                       return UIMenu(title: "", children: [chatAction, voiceAction, faceAction, giftAction])
+                                   })
+    }
 }
 
 // MARK: - UITableviewDataSource
@@ -156,6 +187,9 @@ extension FriendVC: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCell.identifier) as? ProfileCell else { return UITableViewCell() }
+
+//        let interaction = UIContextMenuInteraction(delegate: self)
+//        cell.addInteraction(interaction)
 
         if indexPath.section == 0 {
             cell.initCell(user: FriendVC.user, isUser: true)
