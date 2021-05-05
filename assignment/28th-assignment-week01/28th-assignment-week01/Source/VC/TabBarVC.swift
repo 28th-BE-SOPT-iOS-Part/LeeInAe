@@ -12,6 +12,8 @@ class TabBarVC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tabBar.tintColor = .black
 
         /// friend
         let friendStoryboard = UIStoryboard(name: "Friend", bundle: nil)
@@ -35,20 +37,21 @@ class TabBarVC: UITabBarController {
         guard let moreVC = moreStoryboard.instantiateViewController(identifier: MoreVC.identifier) as? MoreVC else { return }
         
         /// tabbar Item 연결
-        friendVC.tabBarItem.image = UIImage(systemName: "person")
-        friendVC.tabBarItem.selectedImage = UIImage(systemName: "person.fill")
+        friendVC.tabBarItem.image = UIImage(named: "friendTabIcon")
+        friendVC.tabBarItem.selectedImage = UIImage(named: "friendTabIconSelected")
         
-        chatVC.tabBarItem.image = UIImage(systemName: "message")
-        chatVC.tabBarItem.selectedImage = UIImage(systemName: "message.fill")
+        chatVC.tabBarItem.image = UIImage(named: "messageTabIcon")
+        chatVC.tabBarItem.selectedImage = UIImage(named: "messageTabIconSelected")
+        chatVC.tabBarItem.selectedImage?.withTintColor(.black)
         
-        entertainVC.tabBarItem.image = UIImage(systemName: "square.grid.2x2")
-        entertainVC.tabBarItem.selectedImage = UIImage(systemName: "square.grid.2x2.fill")
+        entertainVC.tabBarItem.image = UIImage(named: "searchTabIcon")
+        entertainVC.tabBarItem.selectedImage = UIImage(named: "searchTabIconSelected")
         
-        shoppingVC.tabBarItem.image = UIImage(systemName: "bag")
-        shoppingVC.tabBarItem.selectedImage = UIImage(systemName: "bag.fill")
+        shoppingVC.tabBarItem.image = UIImage(named: "shopTabIcon")
+        shoppingVC.tabBarItem.selectedImage = UIImage(named: "shopTabIconSelected")
         
-        moreVC.tabBarItem.image = UIImage(systemName: "gearshape")
-        moreVC.tabBarItem.selectedImage = UIImage(systemName: "gearshape.fill")
+        moreVC.tabBarItem.image = UIImage(named: "detailTabIcon")
+        moreVC.tabBarItem.selectedImage = UIImage(named: "detailTabIconSelected")
 
         setViewControllers([friendVC, chatVC, entertainVC, shoppingVC, moreVC], animated: true)
     }
