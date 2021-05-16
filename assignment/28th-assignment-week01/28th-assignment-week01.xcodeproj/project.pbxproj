@@ -40,7 +40,8 @@
 		ABDAD70C265140CE00862243 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAD70B265140CE00862243 /* LoginService.swift */; };
 		ABDAD7182651473B00862243 /* SignModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAD7172651473B00862243 /* SignModel.swift */; };
 		ABDAD71B265147C300862243 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAD71A265147C300862243 /* APIConstants.swift */; };
-		ABDAD7202651557B00862243 /* LoginUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAD71F2651557B00862243 /* LoginUser.swift */; };
+		ABDAD7202651557B00862243 /* SignInUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAD71F2651557B00862243 /* SignInUser.swift */; };
+		ABDAD725265162ED00862243 /* SignUpUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDAD724265162ED00862243 /* SignUpUser.swift */; };
 		ABF14E8E264E467800744506 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF14E8D264E467800744506 /* NetworkResult.swift */; };
 		ABF14E92264E46B700744506 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF14E91264E46B700744506 /* NetworkResponse.swift */; };
 		ABF7FF1526419905007B60BB /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7FF1426419905007B60BB /* UserDataModel.swift */; };
@@ -85,7 +86,8 @@
 		ABDAD70B265140CE00862243 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		ABDAD7172651473B00862243 /* SignModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignModel.swift; sourceTree = "<group>"; };
 		ABDAD71A265147C300862243 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
-		ABDAD71F2651557B00862243 /* LoginUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUser.swift; sourceTree = "<group>"; };
+		ABDAD71F2651557B00862243 /* SignInUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUser.swift; sourceTree = "<group>"; };
+		ABDAD724265162ED00862243 /* SignUpUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUser.swift; sourceTree = "<group>"; };
 		ABF14E8D264E467800744506 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		ABF14E91264E46B700744506 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		ABF7FF1426419905007B60BB /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
@@ -153,7 +155,8 @@
 		ABDAD71D2651551800862243 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				ABDAD71F2651557B00862243 /* LoginUser.swift */,
+				ABDAD71F2651557B00862243 /* SignInUser.swift */,
+				ABDAD724265162ED00862243 /* SignUpUser.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -420,7 +423,7 @@
 				AB55FE152632D58200EE8713 /* ProfileCell.swift in Sources */,
 				AB3E6501261B087200FFE047 /* LoginVC.swift in Sources */,
 				ABDAD71B265147C300862243 /* APIConstants.swift in Sources */,
-				ABDAD7202651557B00862243 /* LoginUser.swift in Sources */,
+				ABDAD7202651557B00862243 /* SignInUser.swift in Sources */,
 				ABF14E92264E46B700744506 /* NetworkResponse.swift in Sources */,
 				ABF7FF1526419905007B60BB /* UserDataModel.swift in Sources */,
 				AB3E6517261B0E5C00FFE047 /* UITextField+Extension.swift in Sources */,
@@ -429,6 +432,7 @@
 				AB3E64FD261B087200FFE047 /* AppDelegate.swift in Sources */,
 				ABDAD70C265140CE00862243 /* LoginService.swift in Sources */,
 				AB55FE112632D10F00EE8713 /* MoreVC.swift in Sources */,
+				ABDAD725265162ED00862243 /* SignUpUser.swift in Sources */,
 				AB3E6565261F4F7E00FFE047 /* FirstVC.swift in Sources */,
 				AB3E656E2620A1BF00FFE047 /* ThirdVC.swift in Sources */,
 				AB55FE052632D07B00EE8713 /* EntertainVC.swift in Sources */,

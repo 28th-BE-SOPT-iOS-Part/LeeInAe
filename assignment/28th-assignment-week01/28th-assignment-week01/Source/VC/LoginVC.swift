@@ -44,7 +44,7 @@ class LoginVC: UIViewController {
 
             switch response {
             case .success(let resData):
-                guard let data = resData as? NetworkResponse<LoginUser> else { return }
+                guard let data = resData as? NetworkResponse<SignInUser> else { return }
                 let action = UIAlertAction(title: "확인", style: .cancel) { _ in
                     let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
                     guard let tabBarVC = storyboard.instantiateViewController(identifier: TabBarVC.identifier) as? TabBarVC else { return }
