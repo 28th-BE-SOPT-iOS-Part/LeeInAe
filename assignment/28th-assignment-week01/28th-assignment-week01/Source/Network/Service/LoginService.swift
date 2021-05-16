@@ -36,7 +36,7 @@ struct LoginService {
     private func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
 
-        guard let decodedData = try? decoder.decode(NetworkResponse<SignModel>.self, from: data) else { return .pathErr }
+        guard let decodedData = try? decoder.decode(NetworkResponse<LoginUser>.self, from: data) else { return .pathErr }
 
         switch statusCode {
         case 200:

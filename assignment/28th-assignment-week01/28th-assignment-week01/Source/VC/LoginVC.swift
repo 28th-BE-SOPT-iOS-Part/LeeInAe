@@ -26,21 +26,48 @@ class LoginVC: UIViewController {
         emailTextField.clearButtonMode = .always
         passwordTextField.clearButtonMode = .always
 
+        emailTextField.autocorrectionType = .no
+        passwordTextField.autocorrectionType = .no
+
         emailTextField.setUnderline(color: CGColor(red: 130/255, green: 130/155, blue: 130/255, alpha: 1), borderSize: 1)
         passwordTextField.setUnderline(color: CGColor(red: 130/255, green: 130/155, blue: 130/255, alpha: 1), borderSize: 1)
         passwordTextField.isSecureTextEntry = true
     }
 
     @IBAction func touchUpLoginButton(_ sender: Any) {
-        if emailTextField.text?.count == 0 || passwordTextField.text?.count == 0 {
-            return
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+
+        LoginService.shared.signIn(user: SignModel(email: email, password: password)) { response in
+
+            switch response {
+            case .success(let resData):
+                guard let data = resData as? NetworkResponse<LoginUser> else { return }
+                let action = UIAlertAction(title: "확인", style: .cancel) { _ in
+                    let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+                    guard let tabBarVC = storyboard.instantiateViewController(identifier: TabBarVC.identifier) as? TabBarVC else { return }
+
+                    tabBarVC.modalPresentationStyle = .fullScreen
+                    self.present(tabBarVC, animated: true, completion: nil)
+                }
+                
+                alert.message = data.message
+                alert.addAction(action)
+
+                self.present(alert, animated: true, completion: nil)
+            case .requestErr(let msg):
+                let action = UIAlertAction(title: "확인", style: .cancel)
+                alert.message = msg as? String
+                alert.addAction(action)
+
+                self.present(alert, animated: true, completion: nil)
+            case .pathErr: break
+            case .serverErr: break
+            case .networkFail: break
+            }
         }
-
-        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
-        guard let tabBarVC = storyboard.instantiateViewController(identifier: TabBarVC.identifier) as? TabBarVC else { return }
-
-        tabBarVC.modalPresentationStyle = .fullScreen
-        present(tabBarVC, animated: true, completion: nil)
     }
 
     @IBAction func touchUpSignUpButton(_ sender: Any) {
